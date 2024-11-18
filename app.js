@@ -3,7 +3,7 @@ const numbers = [
   ];
 
 let prime=""
-
+let primeArray=[]
 for(let i=0;i<numbers.length;i++){
     let c=0
     for(let j=2;j<numbers[i];j++){
@@ -14,7 +14,29 @@ for(let i=0;i<numbers.length;i++){
 
     if(c==0){
         prime=prime+numbers[i]+" "
+        primeArray.push(numbers[i])
     }
 }
 
 console.log("Prime numbers are:",prime)
+console.log(primeArray)
+
+let min=primeArray[0]
+let max=primeArray[0]
+let sum=0
+
+for(let k=0;k<primeArray.length;k++){
+    if(primeArray[k]>max){
+        max=primeArray[k]
+    }
+    else if(primeArray[k]<min){
+        min=primeArray[k]
+    }
+
+    sum=sum+primeArray[k]
+
+}
+
+console.log("Maximum number:",max)
+console.log("Minimum number:",min)
+console.log("Sum:",sum)
