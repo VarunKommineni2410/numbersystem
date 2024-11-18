@@ -1,7 +1,9 @@
 
 ## Description
 This Project has 2 file index.js adn app.js
+
 index.js has even and odd numbers
+
 app.js had primeNumbers and there maximum,minimum,sum
 
 ## Outputs of index.js:
